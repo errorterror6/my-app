@@ -3,9 +3,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Header from './Header';
-import Body from './MainContent'
-import Footer from './Footer';
+import Header from './components/Header.js';
+import Body from './components/MainContent.js'
+import Footer from './components/Footer.js';
 
 
 

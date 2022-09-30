@@ -1,134 +1,68 @@
-header {
-
-  max-height: 91px;
-  background-color: #21222A;
+* {
+  box-sizing: border-box;
 }
-
-#header {
-  position: relative;
-  top: 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-height: 91px;
-}
-
-h1 {
-  font-weight: bold;
-  margin: 0;
-}
-
-a {
-  color: black;
-  text-decoration: None;
-}
-
 
 body {
   margin: 0;
-  max-width: 550px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-}
-
-ul {
-  padding-left: 30px;
-  margin-left: 30px;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-footer {
-  padding-left: 20px;
-  padding-top: 7px;
-  padding-bottom: 10px;
-  color: white;
-  background-color: grey;
-  border-top-style: solid;
-  border-image: linear-gradient(to bottom, white, grey) 1;
-  position: relative;
-  top: 550px;
-}
-
-#HeaderReactCourse {
-  position: absolute;
-  width: 259px;
-  height: 21px;
-  left: 264px;
-  top: 38.93px;
-  color:#DEEBF8;
-  margin: 0;
-}
-
-#react-logo {
-  width: 158.32px;
-  height: 30px;
-  padding-bottom: 30px;
-  position: relative;
-  left:26px;
-  top: 0;
-  padding-top: 31px
-}
-
-#main {
-  padding-bottom: 30px;
-  width:550px;
-  height: 459px;
-  position: static;
-  top:91px;
-  background: #282D35 ;
-  color: white;
+  background-color: #282D35; 
+  height: 100vh;
 }
 
 #nav {
+  display: flex;
+  align-items: center;
   background: #21222A;
-  position: static;
+  height: 90px;
+  padding: 30px 25px;
 }
 
-.inter-header {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: right;
+nav > h3, nav > h4 {
+  margin: 0;
 }
 
-.main-header {
-  position: static;
-  width: 424px;
-  height: 41px;
-  left: 27px;
-  top: 147px;
-  margin-left: 27px;
-
-  font-family: 'Inter';
-  font-style: normal;
+nav > h3 {
+  margin-right: auto;
+  color: #61DAFB;
   font-weight: 700;
-  font-size: 39.06px;
-  line-height: 47px;
+  font-size: 22px;
+}
+
+.nav--title {
+  font-weight: 600;
+  color: #DEEBF8;
+  position: absolute;
+  right: 30px;
+}
+
+.nav--icon {
+  height: 30px;
+  margin-right: 7px;
+}
+
+main {
+  padding: 57px;
+  color: white;
+}
+
+.main--title {
+  margin: 0;
+  font-size: 39px;
   letter-spacing: -0.05em;
 }
 
-.main-content {
-  position: static;
-  width: 390px;
-  height: 190px;
-  left: 74px;
-  top: 235px;
+.main--content {
+  margin-top: 46px;
+  max-width: 400px;
 }
 
-.body {
-  width:550px;
-  background-color: #21222A;
+.main--content > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main--content > li::marker {
+  color: #61DAFB;
 }
